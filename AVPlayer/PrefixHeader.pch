@@ -1,0 +1,26 @@
+//
+//  PrefixHeader.pch
+//  AVPlayer
+//
+//  Created by Apple on 2017/8/10.
+//  Copyright © 2017年 KennyHito. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "videoView.h"
+#import "ViewController.h"
+#import "VideoViewController.h"
+
+//屏幕的宽高
+#define HitoScreenW [UIScreen mainScreen].bounds.size.width
+#define HitoScreenH [UIScreen mainScreen].bounds.size.height
+#define HitoActureHeight(height)  roundf(height/375.0 * HitoScreenW)
+
+#define MP4_URL @"http://bsy.qiniu.vmagic.vmoiver.com/57611a88c2b12.mp4"
+
+#endif /* PrefixHeader_pch */
